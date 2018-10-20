@@ -12,10 +12,10 @@ git clone https://github.com/Benzlxs/Object_detection_estimated_sclales --recurs
 2. Install [tensorflow-1.8.0](https://www.tensorflow.org/install/)
 
 3. Install Python dependencies
-```bash
-cd Object_detection_estimated_sclales
-pip3 install -r requirements.txt
-```
+    ```bash
+    cd Object_detection_estimated_sclales
+    pip3 install -r requirements.txt
+    ```
 
 4. Compile integral image library in wavedata
 ```bash
