@@ -1,6 +1,6 @@
 # Object_detection_estimated_sclales
 
-The paper is still underview, and will be released here after it is accepted.
+The paper is still underview, and description will be released here after it is accepted.
 
 ## Installation
 Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
@@ -39,7 +39,7 @@ The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/obj
 
 3. Download [planes](https://drive.google.com/drive/folders/1c5z3NqoLw78NvGWoF_3MBnIsyRI41xSP?usp=sharing) into `~/Kitti/object`
 
-4. Download the pretrained model [VGG16](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) in tensorflow models.
+4. Download the pretrained model [VGG16](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) in tensorflow models, and unzip the pretained model into `odes/data/pretrained_models`
 
 ## Training
 ### Mini-batch Generation
@@ -52,12 +52,15 @@ cd avod
 python scripts/preprocessing/gen_mini_batches.py
 ```
 
-Once this script is done, you should now have the following folders inside `avod/data`:
+Once this script is done, you should now have the following folders inside `odes/data`:
 ```
 data
     label_clusters
     mini_batches
 ```
+### Trainer
+
+### Evaluator
 
 ### Acknowledge
 Thanks to the team of Jason Ku , we have benifited a lot from their previous work [AVOD (Aggregate View Object Detection)](https://arxiv.org/abs/1712.02294) and his [code](https://github.com/kujason/avod).
