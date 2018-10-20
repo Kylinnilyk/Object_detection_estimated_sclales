@@ -65,8 +65,9 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
     If you have the multiple GPU, you can run trianing and evluating simultaneously on different GUPs by setting `CUDA_VISIBLE_DEVICES` in the evaluate.sh file.
    
 2. Evaluting results at 380000 Iterations
+
 | AP       | Easy   |Moderate|  Hard  |
-|:---------|:-------|:-------|:-------|
+|:--------:|:------:|:------:|:------:|
 |  Car     |94.23   |93.89   | 93.62  |
 |Pedestrain| 86.39  |  77.85 |75.03   |
 | Cyclist  | 82.33  | 73.739 |   71.57|
