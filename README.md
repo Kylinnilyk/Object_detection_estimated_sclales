@@ -49,15 +49,27 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
     ```
     The configuration file can be found under directory `./odes/configs/mb_preprocessing/`. Changing parameter settings like area size, density threshold etc. in the config file according to your application.
 
-2. Run training programming.
+2. Start to train.
     ```
     >>chmod +x train.sh
     >>./train.sh
     ```
-    The training configuration can be found under directory `./odes/configs/` where you can find the layer number, learning rate, optimizer and pretrained model dir etc.
+    The training configuration can be found under directory `./odes/configs/` where you can find the max number of iterations, learning rate, optimizer and pretrained model dir etc.
     
-
 ### Evaluating
+1. Run evaluation code
+    ```
+    >>chmod +x evaluate.sh
+    >>./evaluate.sh
+    ```
+    If you have the multiple GPU, you can run trianing and evluating simultaneously on different GUPs by setting `CUDA_VISIBLE_DEVICES` in the evaluate.sh file.
+   
+2. Evaluting results at 380000 Iterations
+| AP       | Easy   |Moderate|  Hard  |
+|:---------|:-------|:-------|:-------|
+|  Car     |94.23   |93.89   | 93.62  |
+|Pedestrain| 86.39  |  77.85 |75.03   |
+| Cyclist  | 82.33  | 73.739 |   71.57|
 
 ### Acknowledge
 Thanks to the team of Jason Ku , we have benifited a lot from their previous work [AVOD (Aggregate View Object Detection)](https://arxiv.org/abs/1712.02294) and his [code](https://github.com/kujason/avod).
