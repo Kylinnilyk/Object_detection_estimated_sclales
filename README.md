@@ -6,9 +6,9 @@ The paper is still underview, and description will be released here after it is 
 Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
 
 1. Clone this repo
-```bash
-git clone https://github.com/Benzlxs/Object_detection_estimated_sclales --recurse-submodules
-```
+    ```bash
+    git clone https://github.com/Benzlxs/Object_detection_estimated_sclales --recurse-submodules
+    ```
 2. Install [tensorflow-1.8.0](https://www.tensorflow.org/install/)
 
 3. Install Python dependencies
@@ -18,24 +18,24 @@ git clone https://github.com/Benzlxs/Object_detection_estimated_sclales --recurs
     ```
 
 4. Compile integral image library in wavedata
-```bash
-sh scripts/install/build_integral_image_lib.bash
-```
+    ```bash
+    sh scripts/install/build_integral_image_lib.bash
+    ```
 
 5. Protobufs are used to configure model and training parameters. Before the framework can be used, the protos must be compiled:
-```bash
-sh odes/protos/run_protoc.sh
-```
+    ```bash
+    sh odes/protos/run_protoc.sh
+    ```
 
 
 ## Preparation
 1. Download [Kitti Object Detection Dataset](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d), and place it in your home folder at `~/Kitti/object`
 
 2. Split data (split_ratio = 0.75 in our setting)
-```
-python odes/utils/split_dataset.py
-```
-- The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/object`. If you want to try other split ratio, adjust split_ratio in split_dataset.py
+    ```bash
+    python odes/utils/split_dataset.py
+    ```
+    The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/object`. If you want to try other split   ratio, adjust split_ratio in split_dataset.py
 
 3. Download [planes](https://drive.google.com/drive/folders/1c5z3NqoLw78NvGWoF_3MBnIsyRI41xSP?usp=sharing) into `~/Kitti/object`
 
