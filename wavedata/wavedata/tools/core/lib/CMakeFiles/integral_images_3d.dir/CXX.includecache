@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/b/tf_projects/pc/pretrained_model/obj_detection_depth/wavedata/wavedata/tools/core/lib/src/integral_images_3d.cpp
+cstdlib
+-
+iostream
+-
+stdint.h
+-
+
