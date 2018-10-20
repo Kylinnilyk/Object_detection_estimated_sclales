@@ -2,7 +2,7 @@
 
 The paper is still underview, and will be released here after it is accepted.
 
-## Getting Started
+## Installation
 Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
 
 1. Clone this repo
@@ -28,10 +28,8 @@ sh odes/protos/run_protoc.sh
 ```
 
 
-## Training
-### [Kitti Object Detection Dataset](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d):
-
-1. Download the data and place it in your home folder at `~/Kitti/object`
+## Preparation
+1. Download [Kitti Object Detection Dataset](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d), and place it in your home folder at `~/Kitti/object`
 
 2. Split data (split_ratio = 0.75 in our setting)
 ```
@@ -41,6 +39,9 @@ The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/obj
 
 3. Download [planes](https://drive.google.com/drive/folders/1c5z3NqoLw78NvGWoF_3MBnIsyRI41xSP?usp=sharing) into `~/Kitti/object`
 
+4. Download the pretrained model [VGG16](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) in tensorflow models.
+
+## Training
 ### Mini-batch Generation
 The training data needs to be pre-processed to generate mini-batches. To configure the mini-batches, you can modify `odes/configs/mb_preprocessing/rpn_[class].config`. You also need to select the *class* you want to train on. Inside the `scripts/preprocessing/gen_img_mini_batches.py` select the classes to process. By default it processes the *Car* and *People* classes, where the flag `process_[class]` is set to True. The People class includes both Pedestrian and Cyclists. *pdestrain* and *cyclist* can also be processed separately.
 
