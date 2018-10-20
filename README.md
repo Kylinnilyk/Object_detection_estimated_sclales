@@ -41,26 +41,16 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
 
 4. Download the pretrained model [VGG16](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) in tensorflow models, and unzip the pretained model into `odes/data/pretrained_models`
 
-## Training
-### Mini-batch Generation
-The training data needs to be pre-processed to generate mini-batches. To configure the mini-batches, you can modify `odes/configs/mb_preprocessing/rpn_[class].config`. You also need to select the *class* you want to train on. Inside the `scripts/preprocessing/gen_img_mini_batches.py` select the classes to process. By default it processes the *Car* and *People* classes, where the flag `process_[class]` is set to True. The People class includes both Pedestrian and Cyclists. *pdestrain* and *cyclist* can also be processed separately.
+### Training
+1. Generate preprocessed data including estimated scale size from depth.
+    ```
+    chmod +x generate_img_batch.sh
+   ./generate_img_batch.sh
+    ```
+    The configuration file can be found under directory `./odes/configs/mb_preprocessing/`. Changing parameter settings like area size, density threshold etc, in the config file according to your application.
+    
 
-Note: This script does parallel processing with `num_[class]_children` processes for faster processing. This can also be disabled inside the script by setting `in_parallel` to `False`.
-
-```bash
-cd avod
-python scripts/preprocessing/gen_mini_batches.py
-```
-
-Once this script is done, you should now have the following folders inside `odes/data`:
-```
-data
-    label_clusters
-    mini_batches
-```
-### Trainer
-
-### Evaluator
+### Evaluating
 
 ### Acknowledge
 Thanks to the team of Jason Ku , we have benifited a lot from their previous work [AVOD (Aggregate View Object Detection)](https://arxiv.org/abs/1712.02294) and his [code](https://github.com/kujason/avod).
