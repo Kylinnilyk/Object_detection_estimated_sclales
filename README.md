@@ -68,9 +68,9 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
 
     | AP       | Easy   |Moderate|  Hard  |
     |:--------:|:------:|:------:|:------:|
-    |  Car     |94.23   |93.89   | 93.62  |
-    |Pedestrain| 86.39  |  77.85 |75.03   |
-    | Cyclist  | 82.33  | 73.739 |   71.57|
+    |  Car     |93.53   |90.89   | 90.62  |
+    |Pedestrain| 80.39  |  74.85 |66.76   |
+    | Cyclist  | 81.33  | 76.73  |   71.47|
     
     Evaluate your model around 380000 Iterations, you should be able to achieve above accuracy
 
