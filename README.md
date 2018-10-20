@@ -64,13 +64,14 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
     ```
     If you have the multiple GPU, you can run trianing and evluating simultaneously on different GUPs by setting `CUDA_VISIBLE_DEVICES` in the evaluate.sh file.
    
-2. Evaluting results at 380000 Iterations
+2. Evaluting results.
 
-| AP       | Easy   |Moderate|  Hard  |
-|:--------:|:------:|:------:|:------:|
-|  Car     |94.23   |93.89   | 93.62  |
-|Pedestrain| 86.39  |  77.85 |75.03   |
-| Cyclist  | 82.33  | 73.739 |   71.57|
+    | AP       | Easy   |Moderate|  Hard  |
+    |:--------:|:------:|:------:|:------:|
+    |  Car     |94.23   |93.89   | 93.62  |
+    |Pedestrain| 86.39  |  77.85 |75.03   |
+    | Cyclist  | 82.33  | 73.739 |   71.57|
+    Evaluate your model around 380000 Iterations, you should be able to achieve above accuracy
 
 ### Acknowledge
 Thanks to the team of Jason Ku , we have benifited a lot from their previous work [AVOD (Aggregate View Object Detection)](https://arxiv.org/abs/1712.02294) and his [code](https://github.com/kujason/avod).
