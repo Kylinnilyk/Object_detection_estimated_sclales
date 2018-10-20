@@ -35,7 +35,7 @@ sh odes/protos/run_protoc.sh
 ```
 python odes/utils/split_dataset.py
 ```
-The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/object`. If you want to try other split ratio, adjust split_ratio in split_dataset.py
+--The `train.txt` and `val.txt` will be generated, and copy them into `~/Kitti/object`. If you want to try other split ratio, adjust split_ratio in split_dataset.py
 
 3. Download [planes](https://drive.google.com/drive/folders/1c5z3NqoLw78NvGWoF_3MBnIsyRI41xSP?usp=sharing) into `~/Kitti/object`
 
