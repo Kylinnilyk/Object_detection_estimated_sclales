@@ -71,6 +71,7 @@ Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
     |  Car     |94.23   |93.89   | 93.62  |
     |Pedestrain| 86.39  |  77.85 |75.03   |
     | Cyclist  | 82.33  | 73.739 |   71.57|
+    
     Evaluate your model around 380000 Iterations, you should be able to achieve above accuracy
 
 ### Acknowledge
