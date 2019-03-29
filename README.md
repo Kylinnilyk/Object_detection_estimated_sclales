@@ -1,6 +1,20 @@
 # Object_detection_estimated_sclales
+This repository contains the public release of the python implementation of Detection of [Imaged Objects with Estimated Scales](http://www.scitepress.org/PublicationsDetail.aspx?ID=Jr1S7apgu68=&t=1),
 
-The paper is still underview, and description will be released here after it is accepted.
+If you find this code useful, please cite our paper:
+
+@conference{visapp19,
+author={Xuesong Li. and Ngaiming Kwok. and Jose E. Guivant. and Karan Narula. and Ruowei Li. and Hongkun Wu.},
+title={Detection of Imaged Objects with Estimated Scales},
+booktitle={Proceedings of the 14th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 5: VISAPP,},
+year={2019},
+pages={39-47},
+publisher={SciTePress},
+organization={INSTICC},
+doi={10.5220/0007353600390047},
+isbn={978-989-758-354-4},
+}
+
 
 ## Installation
 Implemented and tested on Ubuntu 16.04 with Python 3.5 and Tensorflow 1.8.0.
